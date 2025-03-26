@@ -4,65 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desire Art collection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/index.js" defer></script>
 </head>
 <body>
     <header>
-        <p>desire art collection</p>
-        <nav></nav>
+        <p>Desire art collection</p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Our society</a>
+            <a href="#">Programmes</a>
+            <a href="#">Updates</a>
+        </nav>
     </header>
     <main>
         <div id="about">
             <h1>About us </h1>
-            <p>Desire art collection is </p>
+            <p>Desire art collection is a prestigious art society that offers a vibrant and collaborative space where artist,creators and enthusiasts come together to share their artistic expressions.Through curated exhibitions, discussions, and collaborations, members engage in meaningful exchanges that inspire both artistic growth and appreciation. Whether collecting, creating, or simply admiring, the Desire Art Collection Community fosters a deep connection between artists and collectors, celebrating the beauty and power of art in all its forms.</p>
         </div>
         <div id="culture">
             <h1>The culture</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, doloribus modi earum cumque repellat, minima ea, velit sint officiis tempora recusandae? Vel quos laudantium aliquid quidem? Laboriosam explicabo sunt est nobis perferendis itaque rem aperiam?</p>
-            <img src="" alt="most popular">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae officia repudiandae commodi rerum architecto sed quis delectus fuga ipsa culpa.</p>
+            <p>Desire art collection is a Community that  thrives on a commitment to curating and celebrating diverse works that push creative boundaries and tell compelling stories.Examples of the art works that we thrive in include: paintings,sculputures,photographs,street art and contemporary pieces.We are pleased to have natured young talents and artist who have made a major breakthrough in the art Community.An exapmle is <em>Arnold Maruti</em> who is the artist behind the famous art work <em>Programmierung</em> that shows the programming world from a developers point of veiw </p>
+            <img src="./images/arnold's artwork.jpeg" alt="most popular">
+            <p>We are very pleased to be a part of the art community and are ready to make more acheivements.As the art saying goes</p>
+            <p id="quote">"Art is never finished, only abandoned."By leonardo Da Vinci</p>
         </div>
+        <div id="display">
+        <h3>Exhibitions</h3>
         <div id="exhibitions">
-        <h3>exhibitions</h3>
-            <div id="black history month">
-                <img src="" alt="picture of black history month">
+            <div id="blackhistorymonth">
+                <img src="./images/black history month.jpeg" alt="picture of black history month">
                 <h4>black history month</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, tenetur?</p>
+                <p>Recognizing the achivements,contributions and history of black individuals and communities</p>
             </div>
             <div id="experience">
-                <img src="" alt="picture of the event">
-                <h4>10 yrs of experience</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, enim.</p>
+                <img src="./images/10 years of experience.jpeg" alt="picture of the event">
+                <h4>10 years of experience</h4>
+                <p>Desire art collection celebrates 10 years of work and expirience in the art community</p>
             </div>
             <div id="founder">
-                <img src="" alt="Elizabeth Catlett">
+                <img src="./images/elizabeth catlet.jpeg" alt="Elizabeth Catlett">
                 <h4>Elizabeth Catlett</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, sunt.</p>
+                <p>Celebrating Elizabeth Catlett a pioneer who inspired the start of this art collection</p>
             </div>
-            <div id="the 90's">
-                <img src="" alt="picture of the 90's">
+            <div id="the90s">
+                <img src="./images/the 90's.jpeg" alt="picture of the 90's">
                 <h4>the 90's</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, similique.</p>
+                <p>A tribute to the golden decade of bold creativity,cultural renovation and unforgettable moments </p>
+            </div>
             </div>
         </div>
+    <div id="style">
+    <h1>the collection</h1>
     <div id="catalogue">
-
+        
+    </div>
+         
     </div>
     <section id="form">
-       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim molestias ipsa cum quibusdam nihil architecto vero maiores minus libero.</p>
+        <p id="notice">FOR ARTIST WHO ARE WILLING TO VENTURE INTO THE ART COMMUNITY AND MARKET THEIR ART WORKS</p>
+       <p>Worry no more we are here to assits you. As an art community we also offer a platform where artist can sell their art.Just fill in the details below to auction your art at affordable prices  </p>
     </section>
-    <form>
+    <div id="outerdiv">
+    <div id="input">
+    <form id="newArt">
         <label for="artist">artist:</label><br>
         <input type="text" id="artist" placeholder="artist name"><br>
-        <label for="painting">painting:</label><br>
+        <label for="painting">artwork:</label><br>
         <input id="painting" type="url" placeholder="link for painting image"><br>
-        <label for="painting-name">name of the painting:</label><br>
-        <input id="painting-name" type="text" placeholder="painting name"><br>
+        <label for="paintingname">name:</label><br>
+        <input id="paintingname" type="text" placeholder="painting name"><br>
         <label for="price">price:</label><br>
-        <input id="price" type="number" placeholder="price">
-
+        <input id="price" type="number" placeholder="price"><br>
+        <input type="button" id="button" value="sell art">
         
     </form>
+    </div>
+    </div>
     </main>
-    
+    <footer>
+         <p>for more information contact us through the following media handles </p>
+         <i class="fa-brands fa-instagram"></i>
+         <p>Instagram:<a href="#">Desire_art_collection</a></p>
+         <i class="fa-brands fa-x-twitter"></i>
+         <p>X:<a href="#">Desire_art_collection</a></p>
+         <i class="fa-brands fa-tiktok"></i>
+         <p>tiktok:<a href="#">Desire_art_collection</a></p>
+         <p>mobile number:071111111 </p>
+
+
+    </footer>
 </body>
 </html>

@@ -1,4 +1,120 @@
 *{
     margin:0;
+    padding:0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size:40px;
+    margin: 10px 70px;
+}
+header p{
+    font-weight: 700;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav a{
+    padding: 0px 5px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #24252a;
+}
+a:hover{
+    text-decoration: underline 5px;
+}
+#about,#culture,#display,#form,#style{
+    border-radius: 25px;
+    background-color: #ededed;
+    padding:5px;
+    margin: 50px 300px;
+    font-size: 27px;
+}
+#culture img{
+    display: block;
+    margin: auto;
 
 }
+#quote ,em,h1,h3,h4,label,footer p{
+    color: #28809a;
+}
+#display h3{
+   font-size: 40px;
+}
+#exhibitions{
+    display: flex;
+    justify-content: space-between;
+}
+#blackhistorymonth,#experience,#founder,#the90s,#catalogue div{
+    margin: 2px 10px;
+    border-radius: 25px;
+    background-color: #dadada;
+    padding:15px;
+}
+#notice:hover{
+    text-decoration: underline;
+}
+#input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    margin:  50px 650px;
+    border-radius: 25px;
+    padding: 2px 4px;
+    outline: blue;
+    
+
+}
+label{
+    font-size: 30px;
+}
+input{
+    padding: 5px 150px;
+    margin: 0px 0px 10px 0px;
+}
+footer{
+    text-align: center;
+    background-color:#dadada;
+    border:2px solid white;
+    border-radius: 25px;
+    margin: 5px 300px;
+}
+footer p{
+    font-weight: 700px;
+    font-size: 26px;
+}
+footer p a{
+    text-decoration: none;
+    color: black;
+
+}
+footer i{
+    width: 100px;
+}
+i{
+    font-size: 40px;
+}
+#catalogue{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:nowrap;
+
+}
+#catalogue div img{
+    width: 150px;
+    height: 150px;
+}
+#catalogue div{
+    margin: 2px 10px;
+    padding: 9px;
+    text-align: center;
+}
+button{
+    margin:10px;
+    padding: 10px;
+}
+

@@ -1,0 +1,47 @@
+{
+    "details": [
+      {
+        "id": 1,
+        "artist": "Arnold Maruti",
+        "artwork": "https://img.freepik.com/premium-photo/painting-woman39s-face-with-blue-green-background_209484-48647.jpg?w=740",
+        "name":"Sorrows of javascript",
+        "price":15000
+      },
+      {
+        "id": 2,
+        "artist": "Barry Allen",
+        "artwork": "https://img.freepik.com/free-photo/eyes-sparkled-with-vibrant-colors-autumn-leaves-generative-ai_8829-2921.jpg?t=st=1742994727~exp=1742998327~hmac=afd90514f4e959f32cd365ed8f192045faab7e1263742089ca974182984991ff&w=740",
+        "name": "I see through you",
+        "price":7000
+      },
+      {
+        "id": 3,
+        "artist": "Wally West",
+        "artwork": "https://img.freepik.com/free-photo/digital-art-style-illustration-mental-health-day-awareness_23-2151813365.jpg?t=st=1742995074~exp=1742998674~hmac=b8c1bd07fe3ff10ae8db0bd390f3d4741bae802a13b3d314276289f3102918ee&w=740",
+        "name":"Vibrance",
+        "price":10000 
+      },
+      {
+        "id": 4,
+        "artist": "Iris West",
+        "artwork": "https://img.freepik.com/free-vector/collage-retro-digital-vector-vintage-illustration-mixed-media-art_53876-136403.jpg?t=st=1742995152~exp=1742998752~hmac=1456b1a85a5c620118b4704b0436dae3c24d25b4f099c9efdcba47513ed013c5&w=740",
+        "name":"Cheer up its a new day",
+        "price":11000
+      },
+      {
+        "id": 5,
+        "artist": "Cisco Ramon",
+        "artwork": "https://img.freepik.com/free-vector/creative-angel-with-long-wings-tshirt-design-hand-drawn-sketch-vector-illustration_460848-14814.jpg?t=st=1742995742~exp=1742999342~hmac=2fb7598c8850424a1099944b309045bdc161fb05e20513588d8c23c42c9fb433&w=740",
+        "name": "Weight on my shoulder",
+        "price":9000
+      },
+      {
+        "id":6,
+        "artist":"Gypsy",
+        "artwork":"https://img.freepik.com/free-photo/aesthetic-background-greek-bust_23-2150705041.jpg?t=st=1742996169~exp=1742999769~hmac=95906fa9ebb8279df94a74c5c82c043f2b3c50e09ad5289f4a49377354379021&w=740",
+        "name":"greek sculpture",
+        "price":20000
+    }
+    ]
+  }
+  
