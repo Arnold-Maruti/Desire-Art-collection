@@ -28,7 +28,7 @@ function displayDetail(){
                 const button=document.createElement("button");
                 button.innerText=`Buy`;
 
-            
+                selectedDetail=element;
                  
                 division.appendChild(image)
                 division.appendChild(artist)
@@ -45,8 +45,47 @@ function displayDetail(){
  
 document.querySelector("#newArt").addEventListener("submit",(e)=>{
     e.preventDefault();
+
+    let artists=document.getElementById("artist").value;
+    let artworks=document.getElementById("painting").value;
+    let names=document.getElementById("paintingname").value;
+    let prices=document.getElementById("price").value;
+    console.log(artist);
+    
+
+    let newPainting={
+        artist:artists,
+        artwork:artworks,
+        name:names,
+        price:prices
+    }
+    addArt(newPainting)
     
     
+})
+function addArt(newPainting){
+
+   return fetch('http://localhost:3000/details',{
+           method:'POST',
+            headers:{
+            'Content-Type':'application/json'
+        },
+               body:JSON.stringify(newPainting)
+    })
+    .then(resp=>resp.json)
+    .then(data=>console.log(data))
+}
+
+
+document.querySelector("button").addEventListener("click",selectedDetail=>{
+    return fetch(`http://localhost:3000/details/${selectedDetail.id}`,{
+        method:'DELETE',
+        headers:{
+            'Content-Type':'application/json'
+        }
+    })
+    .then(resp=>resp.json)
+    .then(data=>console.log(data))
 })
 
 
