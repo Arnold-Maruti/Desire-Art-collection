@@ -77,7 +77,11 @@ function addArt(newPainting){
 }
 
 
-document.querySelector("button").addEventListener("click",selectedDetail=>{
+document.querySelector("button").addEventListener("click",()=>{
+     removeArt(selectedDetail)})
+
+
+function removeArt(selectedDetail){
     return fetch(`http://localhost:3000/details/${selectedDetail.id}`,{
         method:'DELETE',
         headers:{
@@ -85,7 +89,10 @@ document.querySelector("button").addEventListener("click",selectedDetail=>{
         }
     })
     .then(resp=>resp.json)
-    .then(data=>console.log(data))
-})
+    .then(data=>{
+        console.log(data);
+        alert('item has been purchased')
+    })
+}
 
 
