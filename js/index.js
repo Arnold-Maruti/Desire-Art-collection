@@ -29,6 +29,10 @@ function displayDetail(){
                 button.innerText=`Buy`;
 
                 selectedDetail=element;
+                
+                button.addEventListener("click",removeArt)
+
+                
                  
                 division.appendChild(image)
                 division.appendChild(artist)
@@ -77,8 +81,7 @@ function addArt(newPainting){
 }
 
 
-document.querySelector("button").addEventListener("click",()=>{
-     removeArt(selectedDetail)})
+;
 
 
 function removeArt(selectedDetail){
@@ -88,7 +91,7 @@ function removeArt(selectedDetail){
             'Content-Type':'application/json'
         }
     })
-    .then(resp=>resp.json)
+    .then(resp=>resp.json())
     .then(data=>{
         console.log(data);
         alert('item has been purchased')
