@@ -28,9 +28,12 @@ function displayDetail(){
                 const button=document.createElement("button");
                 button.innerText=`Buy`;
 
-                selectedDetail=element;
                 
-                button.addEventListener("click",removeArt)
+                
+                button.addEventListener("click",()=>{
+                    selectedDetail=element;
+                    removeArt(selectedDetail);
+                })
 
                 
                  
@@ -94,7 +97,7 @@ function removeArt(selectedDetail){
     .then(resp=>resp.json())
     .then(data=>{
         console.log(data);
-        alert('item has been purchased')
+        alert(`${selectedDetail.name} has been purchased`)
     })
 }
 
