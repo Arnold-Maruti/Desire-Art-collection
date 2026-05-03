@@ -4,7 +4,7 @@ const catalogue=document.querySelector("#catalogue")
 let selectedDetail
 
 function displayDetail(){
-    return fetch("https://my-json-server-2.vercel.app/details")
+    return fetch("https://desire-art-collection-1.onrender.com//details")
            .then(resp=>resp.json())
            .then(data=>{
                 data.forEach(element => {
@@ -72,7 +72,7 @@ document.querySelector("#newArt").addEventListener("submit",(e)=>{
 })
 function addArt(newPainting){
 
-   return fetch('https://my-json-server-2.vercel.app/details',{
+   return fetch('https://desire-art-collection-1.onrender.com/',{
            method:'POST',
             headers:{
             'Content-Type':'application/json'
@@ -88,7 +88,7 @@ function addArt(newPainting){
 
 
 function removeArt(selectedDetail){
-    return fetch(`https://my-json-server-2.vercel.app/details/${selectedDetail.id}`,{
+    return fetch(`https://desire-art-collection-1.onrender.com//details/${selectedDetail.id}`,{
         method:'DELETE',
         headers:{
             'Content-Type':'application/json'
