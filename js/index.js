@@ -4,7 +4,7 @@ const catalogue=document.querySelector("#catalogue")
 let selectedDetail
 
 function displayDetail(){
-    return fetch("http://localhost:3000/details")
+    return fetch("https://my-json-server-2.vercel.app/details")
            .then(resp=>resp.json())
            .then(data=>{
                 data.forEach(element => {
@@ -72,7 +72,7 @@ document.querySelector("#newArt").addEventListener("submit",(e)=>{
 })
 function addArt(newPainting){
 
-   return fetch('http://localhost:3000/details',{
+   return fetch('https://my-json-server-2.vercel.app/details',{
            method:'POST',
             headers:{
             'Content-Type':'application/json'
@@ -88,7 +88,7 @@ function addArt(newPainting){
 
 
 function removeArt(selectedDetail){
-    return fetch(`http://localhost:3000/details/${selectedDetail.id}`,{
+    return fetch(`https://my-json-server-2.vercel.app/details/${selectedDetail.id}`,{
         method:'DELETE',
         headers:{
             'Content-Type':'application/json'
