@@ -34,6 +34,13 @@
       "artwork": "https://img.freepik.com/free-photo/illustration-digital-art-style-with-pottery_23-2151813549.jpg?t=st=1743078417~exp=1743082017~hmac=10c7242051ea01d58e919f6626cea64eb255d053f2d653059696555b645eb44e&w=740",
       "name": "Culture",
       "price": 14000
+    },
+    {
+      "id": "e54b",
+      "artist": "Gypsy",
+      "artwork": "https://img.freepik.com/free-photo/aesthetic-background-with-greek-bust_23-2150705069.jpg?t=st=1743138841~exp=1743142441~hmac=34e1df28068e2b42b42f26072f8144d0ff2b576eb0a8a190e75a62ddb982e692&w=740",
+      "name": "greek god",
+      "price": "20000"
     }
   ]
 }
