@@ -2,203 +2,205 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-}
-
-body{
     font-family: Arial, sans-serif;
 }
 
-/* HEADER */
+/* ================= HEADER ================= */
 header{
     display:flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 28px;
-    margin: 10px;
-    gap: 10px;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+    flex-wrap:wrap;
+}
+
+header p{
+    font-size:24px;
+    font-weight:700;
 }
 
 nav{
     display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    flex-wrap:wrap;
+    gap:10px;
+    justify-content:center;
 }
 
 nav a{
-    font-weight:700;
     text-decoration:none;
     color:#24252a;
+    font-weight:700;
+    padding:5px;
 }
 
 a:hover{
-    text-decoration: underline 3px;
+    text-decoration:underline 3px;
 }
 
-/* SECTIONS */
+/* ================= SECTIONS ================= */
 #about,#culture,#display,#form,#style{
-    border-radius: 20px;
-    background-color:#ededed;
-    padding:15px;
-    margin: 15px;
-    font-size: 18px;
-}
-
-/* IMAGES */
-#culture img{
-    display:block;
-    margin:auto;
-    max-width:100%;
-    height:auto;
-}
-
-/* COLORS */
-#quote, em, h1, h3, h4, label, footer p{
-    color:#28809a;
-}
-
-/* EXHIBITIONS */
-#exhibitions{
-    display:flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-#blackhistorymonth,#experience,#founder,#the90s,#catalogue div{
-    margin:10px 0;
+    background:#ededed;
     border-radius:20px;
-    background-color:#dadada;
-    padding:15px;
-}
-
-/* INPUT */
-#input{
-    display:flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content:center;
-    border:2px solid black;
-    margin:20px;
-    border-radius:20px;
-    padding:10px;
-}
-
-label{
-    font-size:20px;
-}
-
-input{
-    padding:10px;
-    width: 100%;
-    max-width: 300px;
-    margin-bottom:10px;
-}
-
-/* FOOTER */
-footer{
-    text-align:center;
-    background-color:#dadada;
-    border-radius:20px;
-    margin:20px;
-    padding:10px;
-}
-
-footer p{
-    font-weight:700;
+    padding:20px;
+    margin:15px;
     font-size:18px;
 }
 
-footer p a{
-    text-decoration:none;
-    color:black;
+/* ================= CULTURE IMAGE ================= */
+#culture img{
+    display:block;
+    margin:15px auto;
+    max-width:100%;
+    height:auto;
+    border-radius:10px;
+}
+
+/* ================= COLORS ================= */
+h1,h3,h4,label,#quote,em,footer p{
+    color:#28809a;
+}
+
+/* ================= EXHIBITIONS ================= */
+#exhibitions{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+#blackhistorymonth,#experience,#founder,#the90s{
+    background:#dadada;
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+}
+
+#exhibitions img{
+    width:100%;
+    max-width:250px;
+    height:auto;
+    border-radius:10px;
+}
+
+/* ================= CATALOGUE ================= */
+#catalogue{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+#catalogue div{
+    background:#dadada;
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+}
+
+#catalogue img{
+    width:100%;
+    max-width:200px;
+    height:auto;
+    border-radius:10px;
+}
+
+/* ================= FORM ================= */
+#input{
+    display:flex;
+    justify-content:center;
+    padding:20px;
+}
+
+form{
+    width:100%;
+    max-width:400px;
+}
+
+label{
+    font-size:18px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-bottom:10px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+#button{
+    background:#28809a;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+#button:hover{
+    background:#1f6b80;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    text-align:center;
+    background:#dadada;
+    padding:20px;
+    margin:15px;
+    border-radius:20px;
+}
+
+footer p{
+    font-size:16px;
+    font-weight:600;
 }
 
 i{
     font-size:30px;
+    margin-top:10px;
 }
 
-/* CATALOGUE */
-#catalogue{
-    display:flex;
-    flex-direction: column;
-    gap: 10px;
-}
+/* ================= TABLET ================= */
+@media (min-width:768px){
 
-#catalogue div img{
-    width:100%;
-    max-width:200px;
-    height:auto;
-}
-
-#catalogue div{
-    text-align:center;
-    padding:10px;
-}
-
-button{
-    margin:10px;
-    padding:10px;
-}
-
-@media (min-width: 768px){
     header{
-        flex-direction: row;
-        justify-content: space-between;
-        font-size: 35px;
-        margin: 20px;
-    }
-
-    nav{
-        justify-content: space-between;
-    }
-
-    #about,#culture,#display,#form,#style{
-        margin: 30px 80px;
-        font-size: 22px;
+        padding:20px 40px;
     }
 
     #exhibitions{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-around;
     }
 
     #catalogue{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-
-    input{
-        max-width: 400px;
-    }
-
-    footer{
-        margin: 30px 80px;
-    }
-}
-
-@media (min-width: 1024px){
-    header{
-        font-size:40px;
-        margin: 10px 70px;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-around;
     }
 
     #about,#culture,#display,#form,#style{
-        margin: 50px 200px;
-        font-size: 27px;
+        margin:30px 60px;
+        font-size:20px;
+    }
+}
+
+/* ================= LAPTOP ================= */
+@media (min-width:1024px){
+
+    header p{
+        font-size:32px;
     }
 
-    #input{
-        margin: 50px auto;
-        width: 50%;
+    nav a{
+        font-size:18px;
     }
 
-    footer{
-        margin: 30px 200px;
+    #about,#culture,#display,#form,#style{
+        margin:40px 120px;
     }
 
-    #catalogue{
-        flex-direction: row;
+    #catalogue div{
+        width:300px;
+    }
+
+    #exhibitions div{
+        width:250px;
     }
 }
